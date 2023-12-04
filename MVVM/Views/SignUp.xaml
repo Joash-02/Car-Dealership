@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarDealership.MVVM.Views.SignUp"
+             Title="SignUp"
+             BackgroundColor="White">
+
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Text="Sign Up" TextColor="Black" Grid.Row="0" HorizontalOptions="Center"/>
+        <Entry x:Name="fullnameEntryFeild" Placeholder="Full Name" BackgroundColor="Wheat" TextColor="Black" Grid.Row="1" WidthRequest="400" Margin="5"/>
+        <Entry x:Name="numberEntryFeild" Placeholder="Number" BackgroundColor="Wheat" TextColor="Black" Grid.Row="2" WidthRequest="400" Margin="5"/>
+        <Entry x:Name="emailEntryFeild" Placeholder="Email" BackgroundColor="Wheat" TextColor="Black" Grid.Row="3" WidthRequest="400" Margin="5"/>
+        <Entry x:Name="passwordEntryFeild" Placeholder="Password" BackgroundColor="Wheat" TextColor="Black" Grid.Row="4" WidthRequest="400" Margin="5"/>
+        <Button x:Name="signup" Text="Sign Up" Clicked="signup_Clicked" BackgroundColor="Black" TextColor="White" Grid.Row="5" WidthRequest="400" Margin="5"/>
+        <Button x:Name="login" Text="Login" Clicked="login_Clicked" BackgroundColor="Transparent" TextColor="Black" Grid.Row="6" HorizontalOptions="End" Margin="0,0,10,0"/>
+    </Grid>
+
+</ContentPage>
